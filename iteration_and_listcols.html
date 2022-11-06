@@ -472,6 +472,12 @@ for(i in 1:4){
   output[[i]] = mean_and_sd((list_norm[[i]]))
 }</code></pre>
 </div>
+<div id="lets-try-map" class="section level2">
+<h2>Let’s try map!</h2>
+<pre class="r"><code>output = map(list_norm, mean_and_sd)</code></pre>
+<p>what if want a different function…?</p>
+<pre class="r"><code>output = map(list_norm, IQR)</code></pre>
+</div>
 
 
 
